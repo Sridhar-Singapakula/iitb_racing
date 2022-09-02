@@ -26,6 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -98,9 +99,12 @@
 
     #nrr {
       float: none;
-      height: 60px;
-      width: 125px;
+      height: 100px;
+      width: 300px;
       margin-bottom: 0vh;
+      object-fit:cover;
+      
+      
     }
 
     #iitbo {
@@ -254,12 +258,11 @@
 
       #nrr {
         float: left;
-        height: 100px;
-        width: 190px;
+  
         margin-top: 3%;
         margin-left: .75vw;
         margin-bottom: 5%;
-        margin-right: 1vw;
+        margin-right: 30px;
       }
 
       #iitbo {
@@ -396,7 +399,8 @@
       }
 
       .plat:hover {
-        box-shadow: 0 4px 8px 0 #428bca, 0 6px 20px 0 #428bca;
+        box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+
       }
 
       #p {
@@ -405,10 +409,6 @@
         height: 100px;
         margin: 8vh 5vw 0 -47vw
       }
-    }
-
-    .layer {
-      background-color: rgba(0, 0, 0, 0.9);
     }
 
     .sponsordiv .overlay__background {
@@ -458,6 +458,10 @@
     a:hover {
       color: white
     }
+    .spon{
+      object-fit:cover;
+      background-size:cover;
+    }
   </style>
 
 
@@ -469,7 +473,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logo.png" alt=""></a></h1>
+      <h1 class="logo me-auto"><a href="index.html"><img  src="./assets/img/logo.png" alt=""></a></h1>
 
 
       <nav id="navbar" class="navbar">
@@ -546,15 +550,15 @@
 
       <div id="ib" class="plat" style="height: 185px;padding:10px;">
         <p>
-          <div class="row">
-            <div class="col-lg-3" style="align-items: center;text-align: center;">
+          <div class="row" data-aos="zoom-out-down"  data-aos-duration="4000">
+            <div class="col-lg-3" style="align-items: center;text-align: center;" >
               <a href="http://www.iitb.ac.in/" target="_blank"><img id="iitbo" src="assets/img/iitb.png"
                   alt="iitblogo"></a>
             </div>
-            <div class="col-lg-9" style="display: inline;text-align: center; ">
+            <div class="col-lg-9" style="display: inline;text-align: center; " >
               <!-- <i style="color: darkslategrey;">Motto of IIT Bombay</i>- --> <b
                 style="color: rgb(72, 94, 192);">Knowledge
-                is the Supreme Goal</b></br>
+                is the Supreme Goal<b>
               <div>
                 The Indian Institute of Technology Bombay is among the most prestigious institutes in the country. In a
                 world increasingly propelled by technology, University Research
@@ -569,7 +573,7 @@
       </div>
       <hr class="style-seven" />
 
-      <div id="nr" class="plat" style="height: 185px;padding:10px;display:list-item;text-align: center;">
+      <div id="nr" class="plat" style="height: 185px;padding:10px;display:list-item;text-align: center;" data-aos="zoom-out-up">
         <p>
           <a href="http://www.nrbbearings.com/" target="_blank"><img id="nrr" src="assets/img/nrb.png"></a><br>
           NRB Bearings is an ISO 9001 certified best bearing manufacture company in India.
@@ -597,109 +601,170 @@
 
 
       <section id="cliens" class="cliens sectio-bg" style="text-align: center;">
-        <div class="container">
-          <div class="row" data-aos="zoom-in" style="text-align: center;">
-
-            <div class="col-lg-2 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-
+       
+       
+        <div class="sponsers1" data-aos="fade-left">
+            
+            <div class="layerup">
+      
+              <a  href="https://www.godrej.com/godrejandboyce/">
+                
+                <img src="images/download.jpeg" class="img-fluid1" alt="">
+          
+            </a>
+            <div class="layer">
+              <h1><a href="https://www.godrej.com/godrejandboyce/">Godrej</a></h1>
+            </div>
             </div>
 
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center"
-              style="text-align: center;">
+            <div class="layerup">
               <a href="https://www.pcbpower.com/">
-                <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                <img src="assets/img/clients/client-1.png" class="img-fluid2" alt="">
               </a>
+              <div class="layer">
+                <h1><a href="https://www.pcbpower.com/">PCB</a></h1>
+              </div>
             </div>
 
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
+
+            </div>
+            <div class="sponsers2" data-aos="fade-right">
+            <div class="layerup1" >
               <a href="https://www.te.com/usa-en/home.html">
                 <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" style="text-align: center;" 2>
               </a>
+              <div class="layer1">
+                <h1><a href="https://www.te.com/usa-en/home.html" >TE Connectivity</a></h1>
+              </div>
             </div>
 
-            <div class="col-lg-2 cod-md-11 col-9 d-flex align-items-center justify-content-center">
+            <div class="layerup1">
               <a href="https://www.harnesstechniques.com/">
                 <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
               </a>
+              <div class="layer1">
+                <h1><a href="https://www.harnesstechniques.com/">Harness Techniques</a></h1>
+              </div>
             </div>
 
+        </div>
+
+        
+        <div class="sponsers2">
+            
+          <div class="layerup2"
+            style="text-align: center;">
+            <a href="https://www.altium.com/">
+              <img src="images/download (5).png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://www.altium.com/">Altium</a></h1>
+            </div>
+          </div>
+
+          <div class="layerup2"
+            style="text-align: center;">
+            <a href="https://www.analog.com/en/index.html">
+              <img src="images/download (2).png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://www.analog.com/en/index.html">Analog Devices</a></h1>
+            </div>
+            
+          </div>
+
+          <div class="layerup2" >
+            <a href="https://exigorecycling.in/">
+              <img src="images/Exigo_logo-01-2.png" class="img-fluid" alt="" style="text-align: center;" 2>
+            </a>
+            <div class="layer2">
+              <h1><a href="https://exigorecycling.in/">Exigo</a></h1>
+            </div>
+          </div>
+          
+          <div class="layerup2">
+            <a href="https://www.asianpaints.com/">
+              <img src="images/client-8.png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://www.asianpaints.com/">Asian Paints</a></h1>
+            </div>
+          </div>
+          </div>
+          <div class="sponsers2">
+
+           <div class="layerup2">
+            <a href="https://www.simscale.com/">
+              <img src="images/client-7.png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://www.simscale.com/">Simscale</a></h1>
+            </div>
+          </div>
+          <div class="layerup2">
+            <a href="https://rapidharness.com/">
+              <img src="images/download (4).png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://rapidharness.com/">Rapid Harness</a></h1>
+            </div>
+          </div>
+          <div class="layerup2">
+            <a href="https://ipg-automotive.com/en/">
+              <img src="images/client-4.png" class="img-fluid" alt="">
+            </a>
+            <div class="layer2">
+              <h1><a href="https://ipg-automotive.com/en/">ipg-automotive</a></h1>
+            </div>
+          </div>
+      </div>
+          
+
+      
+
+      <div class="sponsers3">
+            
+        <div class="layerup3"
+          style="text-align: center;">
+          <a href="https://www.solidworks.com/">
+            <img src="images/client-10.png" class="img-fluid" alt="">
+          </a>
+          <div class="layer3">
+            <h1><a href="https://www.solidworks.com/">Solid Works</a></h1>
           </div>
         </div>
 
-        <div class="container">
-          <div class="row" data-aos="zoom-in">
 
-            <div class="col-lg-4 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://ipg-automotive.com/">
-                <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.analog.com/en/index.html">
-                <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-4 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="http://alphanippon.com/">
-                <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-4 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.simscale.com/">
-                <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-4 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a
-                href="https://www.asianpaints.com/campaign/asian-paints-safe-painting-service/index-new-service.html?cid=PS_GA_DM_A&utm_source=Google_Search_Brand&utm_medium=cpc&utm_campaign=&utm_adgroup=Asian_Paints_New&utm_term=%2Basian%20%2Bpaints&utm_term=b-c">
-                <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-4 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.henkel.in/">
-                <img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
+        <div class="layerup3" >
+          <a href="https://www.mathworks.com/">
+            <img src="images/client-11.png" class="img-fluid" alt="" style="text-align: center;" 2>
+          </a>
+          <div class="layer3">
+            <h1><a href="https://www.mathworks.com/">MathWorks</a></h1>
           </div>
         </div>
 
-
-
-        <div class="container">
-          <div class="row" data-aos="zoom-in">
-
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.solidworks.com/">
-                <img src="assets/img/clients/client-10.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://in.mathworks.com/">
-                <img src="assets/img/clients/client-11.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.bender-in.com/">
-                <img src="assets/img/clients/client-12.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-3 cod-md-11 col-9 d-flex align-items-center justify-content-center">
-              <a href="https://www.ansys.com/en-in">
-                <img src="assets/img/clients/client-13.png" class="img-fluid" alt="">
-              </a>
-            </div>
-
+        <div class="layerup3">
+          <a href="https://www.bender-in.com/">
+            <img src="images/client-12.png" class="img-fluid" alt="">
+          </a>
+          <div class="layer3">
+            <h1><a href="https://www.bender-in.com/">Bender</a></h1>
           </div>
         </div>
+
+        <div class="layerup3">
+          <a href="https://www.ansys.com/en-in">
+            <img src="images/client-13.png" class="img-fluid" alt="">
+          </a>
+          <div class="layer3">
+            <h1><a href="https://www.ansys.com/en-in">Ansys</a></h1>
+          </div>
+        </div>
+
+    </div>
+
+
 
 
       </section><!-- End Cliens Section -->
@@ -729,11 +794,11 @@
             <h4>Our Social Networks</h4>
             <p> To stay updated follow us at</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://twitter.com/iitb_racing" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/iitbracing/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/iitbombayracing/" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://in.linkedin.com/company/iit-bombay-racing" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -762,6 +827,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
